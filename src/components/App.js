@@ -1,7 +1,7 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Header from './Header';
 import Content from './Content';
-import Footer from './Footer';
 import RandomNumber from './RandomNumber';
 
 class App extends React.Component {
@@ -9,23 +9,20 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      header: 'Header Initial state',
-      content: 'Content Initial State'
+      value: Math.round(Math.random() * 100)
     };
+
+    this.updateValue = this.updateValue.bind(this);
   }
-  hello() {
+
+  updateValue(randomValue) {
     this.setState({
-      header: 'Header Initial state',
-      content: 'Content Initial State'
-    });
-  }
-  updateHeader() {
-    this.setState({
-      header: 'Header has changed'
+      value: randomValue
     });
   }
 
   render() {
+    // this.state.value 숫자, this.uadateValue 업데이트 된 숫자, 이 숫자를 setState를 통해서 number에게 넘겨주면 값은 변경된다
     return (
       <div>
         <Header title={this.props.headerTitle} />
@@ -33,11 +30,7 @@ class App extends React.Component {
           title={this.props.contentTitle}
           body={this.props.contentBody}
         />
-        <Footer />
-        <h1>{this.state.header}</h1>
-        <h2>{this.state.content}</h2>
-        <button onClick={this.updateHeader.bind(this)}>Update</button>
-        <button onClick={this.hello.bind(this)}>RollBack</button>
+        <RandomNumber number={this.state.value} onUpdate={this.updateValue} />
       </div>
     );
   }

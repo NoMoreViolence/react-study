@@ -2,6 +2,8 @@
 
 # REACT.JS Skeleton
 
+This is not a copy file, this is a file for my study. there is no Illegal element
+
 This project is a React workspace that you can simply start working on React.js project right away.
 
 React 0.14.7, Babel 6 and webpack on Node.js is used to setup the environment.
