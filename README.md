@@ -10,7 +10,6 @@ React 0.14.7, Babel 6 and webpack on Node.js is used to setup the environment.
 
 ## How to use
 
-* `git clone https://github.com/velopert/react-skeleton.git` - Clone the project
 * `npm install` - Install the dependency
 * `npm start` -Run the development server
 
