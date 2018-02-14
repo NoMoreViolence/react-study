@@ -6,6 +6,8 @@ import Content from './Content';
 import RandomNumber from './RandomNumber';
 */
 
+import LifeCycle from './LifeCycle';
+
 class App extends React.Component {
   /*
   constructor(props) {
@@ -26,7 +28,7 @@ class App extends React.Component {
   */
 
   render() {
-    return <Contacts />;
+    return <LifeCycle />;
     /*
     // this.state.value 숫자, this.uadateValue 업데이트 된 숫자, 이 숫자를 setState를 통해서 number에게 넘겨주면 값은 변경된다
     return (

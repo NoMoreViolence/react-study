@@ -13,6 +13,7 @@
   },
   "plugins": ["react"],
   "rules": {
+    "no-console": 0,
     "no-constant-condition": 0,
     "no-unused-vars": 0,
     "linebreak-style": ["error", "unix"],
