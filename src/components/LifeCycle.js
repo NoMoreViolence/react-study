@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+// git test
 class LifeCycle extends React.Component {
   constructor(props) {
     super(props);
