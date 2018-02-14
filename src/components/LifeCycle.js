@@ -44,6 +44,7 @@ class LifeCycle extends React.Component {
         ' ' +
         JSON.stringify(nextState)
     );
+    // 이 부분을 false로 주게 될 경우 컴포넌트의 업데이트가 이루어지지 않는다
     return true;
   }
 
