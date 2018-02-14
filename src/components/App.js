@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-/*
+
 import Header from './Header';
 import Content from './Content';
 import RandomNumber from './RandomNumber';
-*/
 
+/*
 import LifeCycle from './LifeCycle';
-
+*/
 class App extends React.Component {
-  /*
   constructor(props) {
     super(props);
 
@@ -25,11 +24,12 @@ class App extends React.Component {
       value: randomValue
     });
   }
-  */
 
   render() {
-    return <LifeCycle />;
     /*
+    return <LifeCycle />;
+    */
+
     // this.state.value 숫자, this.uadateValue 업데이트 된 숫자, 이 숫자를 setState를 통해서 number에게 넘겨주면 값은 변경된다
     return (
       <div>
@@ -41,7 +41,6 @@ class App extends React.Component {
         <RandomNumber number={this.state.value} onUpdate={this.updateValue} />
       </div>
     );
-    */
   }
 }
 
@@ -87,12 +86,11 @@ class ContactInfo extends React.Component {
     );
   }
 }
-/*
+
 App.defaultProps = {
   headerTitle: 'Default header',
   contentTitle: 'Default contentTitle',
   contentBody: 'Default contentBody'
 };
-*/
 
 export default App;
